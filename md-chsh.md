@@ -1,9 +1,9 @@
 # md cheatsheet 
   [github-md-docs](https://docs.github.com/en/get-started/writing-on-github)
-
+  [markdownguide](https://www.markdownguide.org)
 
 ### text-formating
-
+`monospace`.
 <sub>subscript</sub>
 
 <sup>Superscript</sup>	
@@ -19,6 +19,11 @@
 ```
 code-block test
 ````
+
+(i):
+Escaping Backticks
+If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks (``).
+
 
 
 ### Colors call out
@@ -45,6 +50,36 @@ Links starting with / will be relative to the repository root. You can use all r
 (i) Relative links are easier for users who clone your repository. Absolute links may not work in clones of your repository - we recommend using relative links to refer to other files within your repository.
 
 
+(i)
+Note: To link to an element on the same page, see linking to heading IDs. To create a link that opens in a new tab or window, see the section on link targets. 
+
+(i):
+Adding Titles
+You can optionally add a title for a link. This will appear as a tooltip when the user hovers over the link. To add a title, enclose it in quotation marks after the URL.
+eg: My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
+
+(i):
+URLs and Email Addresses
+
+To quickly turn a URL or email address into a link, enclose it in angle brackets.
+
+<https://www.markdownguide.org>
+<fake@example.com>
+
+
+(i):
+Reference-style Links
+
+Reference-style links are a special kind of link that make URLs easier to display and read in Markdown. Reference-style links are constructed in two parts: the part you keep inline with your text and the part you store somewhere else in the file to keep the text easy to read.
+
+first part
+[hobbit-hole][1]
+second part
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
+
+/!\
+Markdown applications don’t agree on how to handle spaces in the middle of a URL. For compatibility, try to URL encode any spaces with %20. Alternatively, if your Markdown application supports HTML, you could use the a HTML tag.
+
 ### images
 You can display an image by adding ! and wrapping the alt text in [ ]. Then wrap the link for the image in parentheses ().
 
@@ -60,7 +95,7 @@ You can display an image by adding ! and wrapping the alt text in [ ]. Then wrap
 
 
 
-### lists
+### lists (Bullet lists )
 *unordered
 - George Washington
 * John Adams
@@ -77,4 +112,94 @@ To create a nested list using the web editor on GitHub or a text editor that use
 1. First list item
    - First nested list item
      - Second nested list item
-     - 
+ 
+ 
+(i)
+Starting Unordered List Items With Numbers
+use a backslash (\) to escape the period.
+ 
+(i):
+Adding Elements in Lists
+To add another element in a list while preserving the continuity of the list, indent the element **four spaces or one tab**, as shown in the following examples.
+ 
+### Tasklist
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+
+### Mentioning people and teams
+@person
+
+### Referencing issues and pull requests
+#...
+
+### Referencing external resources
+
+### Using emoji
+:+1: :shipit:
+
+
+### Footnotes
+[^1] footnote
+[^1]: footnotetext
+
+
+### Hiding content with comments
+<!-- This content will not appear in the rendered Markdown -->
+
+### Ignoring Markdown formatting (escape char \)
+Let's rename \*our-new-project\* to \*our-old-project\*.
+
+
+
+
+### Adding a table
+You can create tables with pipes | and hyphens -
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+
+### collapsed section
+<details>
+<summary>CLICK ME</summary>
+<p>
+#### We can hide anything, even code!
+
+```ruby
+   puts "Hello World"
+```
+
+</p>
+</details>
+
+
+### horizontal rule (3 or more dashes) 
+To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.
+For compatibility, put blank lines before and after horizontal rules.
+
+
+### Line Breaks
+To create a line break or new line (<br>), end a line with two or more spaces, and then type return.
+You can use two or more spaces (commonly referred to as “trailing whitespace”) for line breaks in nearly every Markdown application, but it’s controversial. It’s hard to see trailing whitespace in an editor, and many people accidentally or intentionally put two spaces after every sentence. For this reason, you may want to use something other than trailing whitespace for line breaks. If your Markdown application supports HTML, you can use the <br> HTML tag.
+
+For compatibility, use trailing white space or the <br> HTML tag at the end of the line.
+
+
+### HTML
+
+Many Markdown applications allow you to use HTML tags in Markdown-formatted text. This is helpful if you prefer certain HTML tags to Markdown syntax. For example, some people find it easier to use HTML tags for images. Using HTML is also helpful when you need to change the attributes of an element, like specifying the color of text or changing the width of an image.
+
+To use HTML, place the tags in the text of your Markdown-formatted file.
+
+This **word** is bold. This <em>word</em> is italic.
+
+The rendered output looks like this:
+
+This word is bold. This word is italic.
+
+Markdown doesn’t allow you to change the color of text, but if your Markdown processor supports HTML, you can use the <font> HTML tag. The color attribute allows you to specify the font color using a color’s name or the hexadecimal #RRGGBB code.
+
+<font color="red">This text is red!</font>

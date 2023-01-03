@@ -18,6 +18,10 @@
 <a href="https://www.markdowntutorial.com/">markdowntutorial.com</a> - interactive lesson<br>
 
 http://markdown.pioul.fr - md online editor
+https://dillinger.io/ - online editor
+https://emojipedia.org/
+
+[stackoverflow.com | "markdown create table of contents"](https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents)
 
 </details>
 

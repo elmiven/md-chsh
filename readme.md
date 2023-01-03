@@ -1,15 +1,22 @@
 ## md cheatsheet 
 
-srcs:  
-[github-md-docs](https://docs.github.com/en/get-started/writing-on-github)<br>
-[markdownguide](https://www.markdownguide.org)
-
+<details>
+<summary>srcs:</summary>
+<a href="https://daringfireball.net/projects/markdown/">original John Gruber docs</a><br>
+<a href="https://www.markdownguide.org">markdownguide</a><br>
+<a href="https://docs.github.com/en/get-started/writing-on-github">github-md-docs</a><br>
+<a href="https://github.github.com/gfm/">github flavored markdown spec(gfm)</a><br>
+<a href="https://www.markdowntutorial.com/">markdowntutorial.com</a><br>
+<a href="https://github.com/mundimark/awesome-markdown"></a><br>
+<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatshee"> </a><br>
+<a href="https://gist.github.com/cuonggt/9b7d08a597b167299f0d"></a><br>
+</details>
 <br>
 
-## Basic Syntax  
+### Basic Syntax  
 Elements outlined in original design document. All Markdown applications support these elements.
 
-- Heading  
+- [Heading](#text-formating)  
 - Emphasis (Bold,Italic)      
 - (Paragraphs) 
 - (Line Breaks)  
@@ -25,7 +32,8 @@ Elements outlined in original design document. All Markdown applications support
   
 * HTML
   
-  
+
+
 ### text-formating
 
 \#<sup>^6</sup> headings 6 lvls  
@@ -38,6 +46,7 @@ Elements outlined in original design document. All Markdown applications support
 texxt <sub>subscript</sub> text  
 text <sup>superscript</sup> text  
 
+v2
 Subscript H~2~O text  
 Superscript X^2^ text   
 
@@ -60,7 +69,7 @@ text `single line-code` text
 code-block test
 ````
 
->(i):
+>:warning:  
 >Escaping Backticks
 >If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks >(``).
 
@@ -94,7 +103,7 @@ GitHub will automatically transform your relative link (or image path) based on 
 The path of the link will be relative to the current file. 
 Links starting with / will be relative to the repository root. You can use all relative link operands, such as ./ and ../.
 
-(i) Relative links are easier for users who clone your repository. Absolute links may not work in clones of your repository - we recommend using relative links to refer to other files within your repository.
+>:warning: Relative links are easier for users who clone your repository. Absolute links may not work in clones of your repository - we recommend using >relative links to refer to other files within your repository.
 
 
 >(i)
@@ -114,7 +123,7 @@ To quickly turn a URL or email address into a link, enclose it in angle brackets
 <fake@example.com>
 
 
->(i):
+>:warning:
 >Reference-style Links
 
 Reference-style links are a special kind of link that make URLs easier to display and read in Markdown. Reference-style links are constructed in two parts: the part you keep inline with your text and the part you store somewhere else in the file to keep the text easy to read.
@@ -386,12 +395,12 @@ Here's a paragraph that will be visible.
 [This is a comment that will be hidden.]: # 
 And here's another paragraph that's visible.  
   
-### Admonitions  
-> :warning: 
-> ``` **Warning:** Do not push the big red button.
+### Admonitions
   
-  ```  
-    
+>  
+> :warning: **Warning:** Do not push the big red button.
+>  
+  
 > :memo: **Note:** ` Sunrises are beautiful. `  
   
 > :bulb: ``` **Tip:** Remember to appreciate the little things in life. ```  

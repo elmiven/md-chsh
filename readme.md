@@ -13,26 +13,95 @@
 </details>
 <br>
 
+
 ### Basic Syntax  
 Elements outlined in original design document. All Markdown applications support these elements.
 
-- [Heading](#text-formating)  
-- Emphasis (Bold,Italic)      
-- (Paragraphs) 
-- (Line Breaks)  
+- Paragraphs 
+`(<p> blank line to separate one or more lines)`
+- Line Breaks 
+`(<br> end a line with two or more spaces "trailing whitespace")`
   
-+ Blockquote  
-+ Lists (Ordered, nordered)       
-+ Code (inline, block)  
-+ Horizontal Rule ---    
-+ Link 	[title](https://www.example.com)  
-+ Image 	![alt text](image.jpg)  
-  
-* Escaping Characters  
-  
-* HTML
+- Horizontal Rules `(*** | --- | ___ | put blank line bfr and aftr)`    
+- Headings `(\# 6 lvls | alt-syntx:line-below h1:\=\=... h2"\-\-\...)`
+- Escaping Characters `(\)`
+- Emphasis `(**bold**, *italic*, ***bolditalic*** | * for cmptblt in the middle)
+       
++ Blockquote  `(Nested | w other Elements | put blank-line before and aftr)`
+
+  + Lists (Ordered, unordered, nested, mixed, w other Elements( four spaces or one tab))       
++ Codeblocks \`\`(inline, block)\`\`  
+    
++ Links (url/emails, to heading-id, reference-style, titles, %20-for-spaces) 
+
+  + Images `(![](txt"title" | [![]()]) )`  
+    
+* HTML (use blank-lines to separate blocj lvls, can't use md-syntx inside html blooks)
   
 
+
+### Extended Syntax  
+These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
+
+
++ Tables
++ Fenced Code Block (\`\`\`)
++ Footnote 	
+  
++ Heading ID 	### My Great Heading {#custom-id}
++ Definition List (term \: definition)
++ Strikethrough 	~~The world is flat.~~
+
++ Task List ([] [x])
++ Emojis  
+
++ Highlight 	I need to highlight these  
+==very important words==.
+
++ Subscript 	H~2~O
++ Superscript 	X^2^ 
+
++ Automatic URL Linking
++ Disabling Automatic URL Linking
+
+
+
+### githubflafored(ghf)
+
+
+### Hacks
+Workarounds for things not officially supported by Markdown.
+
+
++ Underline
++ Indent (Tab)
++ Center
++ Color
++ Comments
++ Admonitions
++ Image Size
++ Image Captions
++ Link Targets
++ Symbols
++ Table Formatting
++ Table of Contents
++ Videos 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# BASIC SYNTAX
 
 ### text-formating
 
@@ -103,7 +172,7 @@ GitHub will automatically transform your relative link (or image path) based on 
 The path of the link will be relative to the current file. 
 Links starting with / will be relative to the repository root. You can use all relative link operands, such as ./ and ../.
 
->:warning: Relative links are easier for users who clone your repository. Absolute links may not work in clones of your repository - we recommend using >relative links to refer to other files within your repository.
+>(i): Relative links are easier for users who clone your repository. Absolute links may not work in clones of your repository - we recommend using >relative links to refer to other files within your repository.
 
 
 >(i)
@@ -221,44 +290,10 @@ Markdown doesn’t allow you to change the color of text, but if your Markdown p
 
 
 
-## Extended Syntax  
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
-
-+ Table  
-+ Fenced Code Block 	
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-+ Footnote 	
-+ 
-+ Heading ID 	### My Great Heading {#custom-id}
-
-+ Definition List 	term
-: definition
-
-+ Strikethrough 	~~The world is flat.~~
-
-+ Task List 	
-- [x] Write the press release
-- [ ] Update the website
-
-+ Emoji  
-(see also Copying and Pasting Emoji) 	That is so funny! :joy:
-
-+ Highlight 	I need to highlight these  
-==very important words==.
-
-+ Subscript 	H~2~O
-+ Superscript 	X^2^ 
-
-+ Automatic URL Linking
-+ Disabling Automatic URL Linking
+# EXTENDED SYNTAX 
+  
+  
+  
 
 
 
@@ -359,23 +394,9 @@ For compatibility, use trailing white space or the <br> HTML tag at the end of t
   
 <br><br>
   
-## Hacks
-Workarounds for things not officially supported by Markdown.
-
-
-+ Underline
-+ Indent (Tab)
-+ Center
-+ Color
-+ Comments
-+ Admonitions
-+ Image Size
-+ Image Captions
-+ Link Targets
-+ Symbols
-+ Table Formatting
-+ Table of Contents
-+ Videos 
+# HACKS
+  
+<br>
   
 ### Underline
 Some of these words <ins>will be underlined</ins>.  

@@ -14,31 +14,39 @@
 <br>
 
 
+
+
+
 ### Basic Syntax  
 Elements outlined in original design document. All Markdown applications support these elements.
 
-- Paragraphs 
-`(<p> blank line to separate one or more lines)`
-- Line Breaks 
-`(<br> end a line with two or more spaces "trailing whitespace")`
-  
-- Horizontal Rules `(*** | --- | ___ | put blank line bfr and aftr)`    
-- Headings `(\# 6 lvls | alt-syntx:line-below h1:\=\=... h2"\-\-\...)`
-- Escaping Characters `(\)`
+- Paragraphs `(<p> blank line to separate one or more lines)`
+- Line Breaks `(<br> end a line with two or more spaces "trailing whitespace")`
+
+
+- Horizontal Rules `(*** | --- | ___ | put blank line bfr and aftr)`     
+- Headings `(# 6 lvls | alt-syntx:line-below h1:== h2:--)`
 - Emphasis `(**bold**, *italic*, ***bolditalic*** | * for cmptblt in the middle)
-       
-+ Blockquote  `(Nested | w other Elements | put blank-line before and aftr)`
 
-  + Lists (Ordered, unordered, nested, mixed, w other Elements( four spaces or one tab))       
-+ Codeblocks \`\`(inline, block)\`\`  
+
+- Blockquote  `(Nested | w other Elements | put blank-line before and aftr)`
+
+- Lists (Ordered, unordered, nested, mixed, w other Elements( four spaces or one tab))       
+- Codeblocks \`\`(inline, block)\`\`  
     
-+ Links (url/emails, to heading-id, reference-style, titles, %20-for-spaces) 
+- Links (url/emails, to heading-id, reference-style, titles, %20-for-spaces) 
 
-  + Images `(![](txt"title" | [![]()]) )`  
-    
-* HTML (use blank-lines to separate blocj lvls, can't use md-syntx inside html blooks)
-  
+- Images `(![](txt"title" | [![]()]) )` 
 
+
+- Escaping Characters `(\)`
+
+- HTML (use blank-lines to separate blocj lvls, can't use md-syntx inside html blooks)
+
+
+
+
+<br>
 
 ### Extended Syntax  
 These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
@@ -46,46 +54,55 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 
 + Tables
 + Fenced Code Block (\`\`\`)
-+ Footnote 	
++ Footnote 	`[^1] [^1:]`
   
-+ Heading ID 	### My Great Heading {#custom-id}
-+ Definition List (term \: definition)
-+ Strikethrough 	~~The world is flat.~~
++ Heading ID(anchror-links) 	`### My Great Heading {#custom-id}`
 
-+ Task List ([] [x])
-+ Emojis  
++ Definition List `(term<br> : definition)`
++ Strikethrough `~~The world is flat.~~`
 
-+ Highlight 	I need to highlight these  
-==very important words==.
++ Task List `(-[] -[x])`
++ Emojis `(copy/paste | :shortcodes:)`
 
-+ Subscript 	H~2~O
-+ Superscript 	X^2^ 
++ Highlight `(==very important words==)`
 
-+ Automatic URL Linking
++ Subscript `(H~2~O | <sub></sub>)`
++ Superscript `(X^2^ | <sup></sup>)` 
+
++ Automatic URL Linking `(wrap link in backtiticks to disable )`
 + Disabling Automatic URL Linking
 
 
 
-### githubflafored(ghf)
 
+<br>
 
 ### Hacks
 Workarounds for things not officially supported by Markdown.
 
 
-+ Underline
-+ Indent (Tab)
-+ Center
-+ Color
-+ Comments
-+ Admonitions
-+ Image Size
-+ Image Captions
-+ Link Targets
++ Underline `(<ins></ins>)`
++ Indent `(<&nbsp> (last resort option))`
++ Center `(tables | <center></center>)`
++ Color `(<font color="red">This text is red!</font>)`
++ Comments `([coment]: # | [//]: # "Comment" | [//]: # (Comment) | <!-- comment --> )`
++ Admonitions `(> :memo: **Note:** Sunrises are beautiful.)`
++ Image Size `(<img src="image.png" width="200" height="100">)`
++ Image Captions `(<figure><img alt=text=><figcation></figcaption></figure>)`
++ Link Targets `(<a href="https://www.markdownguide.org" target="_blank">Learn Markdown!</a>)`
 + Symbols
-+ Table Formatting
-+ Table of Contents
-+ Videos 
++ Table Formatting `(<br>inside cell, <ul><li>inside cell)`
++ Table of Contents(if no suporting heading Ids) `([Underline](#underline))`
++ Videos `([![Image-alt-text](https://img.youtube.com/vi/YOUTUBE-ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE-ID))`
+
+
+
+<br>
+
+### github flavored(ghf)
+
+- collapsed section `(<details> <summary>title</summary></details>)`
+- Colors call out `(The background color should be `#ffffff` for light mode and `#0d1117` for dark mode)`
 
 
 
@@ -96,10 +113,7 @@ Workarounds for things not officially supported by Markdown.
 
 
 
-
-
-
-
+<br><br><br>
 
 # BASIC SYNTAX
 
@@ -114,7 +128,7 @@ Workarounds for things not officially supported by Markdown.
 
 texxt <sub>subscript</sub> text  
 text <sup>superscript</sup> text  
-
+`
 v2
 Subscript H~2~O text  
 Superscript X^2^ text   
@@ -357,19 +371,7 @@ You can create tables with pipes | and hyphens -
 
 
 
-<br><br>
-### collapsed section
-<details>
-<summary>CLICK ME</summary>
-<p>
-#### We can hide anything, even code!
 
-```ruby
-   puts "Hello World"
-```
-
-</p>
-</details>
 
 
 
@@ -494,3 +496,26 @@ You can add a list within a table cell by using HTML tags.
 ### Videos
 [![Image alt text](https://img.youtube.com/vi/YOUTUBE-ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE-ID)
 [![Less Than Jake — Scott Farcas Takes It On The Chin](https://img.youtube.com/vi/PYCxct2e0zI/0.jpg)](https://www.youtube.com/watch?v=PYCxct2e0zI)
+
+
+
+
+
+
+
+
+# github flavored
+
+<br><br>
+### collapsed section
+<details>
+<summary>CLICK ME</summary>
+<p>
+#### We can hide anything, even code!
+
+```ruby
+   puts "Hello World"
+```
+
+</p>
+</details>

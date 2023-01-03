@@ -20,37 +20,24 @@
 ### Basic Syntax  
 *Elements outlined in original design document. All Markdown applications support these elements.*
 
-- Paragraphs  
-```(<p> blank line to separate one or more lines)```
-- Line Breaks<br> 
-   ```(<br> end a line with two or more spaces "trailing whitespace")```
+- Paragraphs  ```(<p> blank line to separate one or more lines)```
+- Line Breaks `(<br> end a line with two or more spaces "trailing whitespace")`
 <br>
 
-   
-- Headings  
-`(# 6 lvls | alt-syntx:line-below h1:== h2:--)`
-- Emphasis  
-`(**bold**, *italic*, ***bolditalic*** | * for cmptblt in the middle)`
-- Horizontal Rules  
-`(*** | --- | ___ | put blank line bfr and aftr)`  
-- Escaping Characters  
-`(\)`
+- Headings ```(# 6 lvls | alt-syntx:line-below h1:== h2:--)```
+- Emphasis `(**bold**, *italic*, ***bolditalic*** | * for cmptblt in the middle)`
+- Horizontal Rules `(*** | --- | ___ | put blank line bfr and aftr)`  
+- Escaping Characters `(\)`
 <br>  
   
-- Blockquote  
-`(Nested | w other Elements | put blank-line before and aftr)`
-- Lists  
-(Ordered, unordered, nested, mixed, w other Elements( four spaces or one tab))       
-- Codeblocks  
-\`\`(inline, block)\`\`  
-- Links  
-`(url/emails, to heading-id, reference-style, titles, %20-for-spaces)` 
-- Images 
-`(![](txt"title" | [![]()]) )` 
+- Blockquote `(Nested | w other Elements | put blank-line before and aftr)`
+- Lists `(Ordered, unordered, nested, mixed, w other Elements( four spaces or one tab))`       
+- Codeblocks`` (inline`(use boublebackticks if backticks in code) | Codeblock(three-backticks)(extended syntax)) ``  
+- Links `(url/emails, to heading-id, reference-style, titles, %20-for-spaces)` 
+- Images `(![](txt"title" | [![]()]) )` 
 <br>
 
-- HTML  
-`(use blank-lines to separate blocj lvls, can't use md-syntx inside html blooks)`
+- HTML `(use blank-lines to separate blocj lvls, can't use md-syntx inside html blooks)`
 
 
 
@@ -59,25 +46,17 @@
 
 ### Extended Syntax  
 These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
-
 + Tables
 + Fenced Code Block (\`\`\`)
-+ Footnote 	`[^1] [^1:]`
-  
++ Footnote 	`[^1] [^1:]`  
 + Heading ID(anchror-links) 	`### My Great Heading {#custom-id}`
-
 + Definition List `(term<br> : definition)`
 + Strikethrough `~~The world is flat.~~`
-
 + Task List `(-[] -[x])`
 + Emojis `(copy/paste | :shortcodes:)`
-
 + Highlight `(==very important words==)`
-
 + Subscript `(H~2~O | <sub></sub>)`
 + Superscript `(X^2^ | <sup></sup>)` 
-
 + Automatic URL Linking `(wrap link in backtiticks to disable )`
 + Disabling Automatic URL Linking
 

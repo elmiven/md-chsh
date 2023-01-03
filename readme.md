@@ -24,10 +24,11 @@ Elements outlined in original design document. All Markdown applications support
 - Line Breaks `(<br> end a line with two or more spaces "trailing whitespace")`
 
 
-- Horizontal Rules `(*** | --- | ___ | put blank line bfr and aftr)`     
+   
 - Headings `(# 6 lvls | alt-syntx:line-below h1:== h2:--)`
 - Emphasis `(**bold**, *italic*, ***bolditalic*** | * for cmptblt in the middle)
-
+- Horizontal Rules `(*** | --- | ___ | put blank line bfr and aftr)`  
+- Escaping Characters `(\)`
 
 - Blockquote  `(Nested | w other Elements | put blank-line before and aftr)`
 
@@ -38,8 +39,6 @@ Elements outlined in original design document. All Markdown applications support
 
 - Images `(![](txt"title" | [![]()]) )` 
 
-
-- Escaping Characters `(\)`
 
 - HTML (use blank-lines to separate blocj lvls, can't use md-syntx inside html blooks)
 

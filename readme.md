@@ -21,9 +21,6 @@ http://markdown.pioul.fr - md online editor
 
 </details>
 
-<br>
-
-
 
 
 
@@ -56,7 +53,7 @@ http://markdown.pioul.fr - md online editor
 
 ### Extended Syntax  
 *These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.*
-+ Tables
++ Tables `| Syntax | Description |` `use Markdown Tables Generator `
 + Fenced Code Block \`\`\`
 + Footnote 	`[^1] [^1:]`  
 + Heading ID(anchror-links) `### My Great Heading {#custom-id}`
@@ -68,7 +65,7 @@ http://markdown.pioul.fr - md online editor
 + Subscript `H~2~O | <sub></sub>`
 + Superscript `X^2^ | <sup></sup>` 
 + Automatic URL Linking `wrap link in backtiticks to disable`
-+ Disabling Automatic URL Linking
++ Disabling Automatic URL Linking `wrap with backticks`
 
 
 
@@ -88,7 +85,7 @@ http://markdown.pioul.fr - md online editor
 + Link Targets `<a href="https://www.markdownguide.org" target="_blank">Learn Markdown!</a>`
 + Symbols `(c), (r), etc...`
 + Table Formatting `<br>(inside cell), <ul><li>(inside cell)`
-+ Table of Contents(if no suporting heading Ids) `[Underline](#underline)`
++ Table of Contents(if no suport heading Ids) `[Underline](#underline)`
 + Videos `[![Image-alt-text](https://img.youtube.com/vi/YOUTUBE-ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE-ID)`
 
 

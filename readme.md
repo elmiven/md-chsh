@@ -10,6 +10,7 @@
 
 <a href="https://docs.github.com/en/get-started/writing-on-github">github md-docs</a><br>
 <a href="https://github.github.com/gfm/">github flavored markdown spec(gfm)</a><br>
+[github editor **shortcuts**](https://docs.github.com/en/get-started/using-github/keyboard-shortcuts#comments)
 
 <a href="https://github.com/mundimark/awesome-markdown">@mundimark/awesome-markdown </a> - A collection of markdown goodies (libraries, services, editors, tools, cheatsheets, etc.)<br>
 <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">@adam-p/markdown-here/wiki/Markdown-Cheatsheet</a><br>
@@ -64,7 +65,7 @@ https://emojipedia.org/
 + Definition List `term<br> : definition`
 + Strikethrough `~~The world is flat.~~`
 + Task List `-[] -[x]`
-+ Emojis `copy/paste | :shortcodes:`
++ Emojis `copy/paste | :shortcodes:` https://emojipedia.org/shortcodes/
 + Highlight `==very important words==`
 + Subscript `H~2~O | <sub></sub>`
 + Superscript `X^2^ | <sup></sup>` 
@@ -101,5 +102,6 @@ https://emojipedia.org/
 - collapsed section `</details></summary>`
 - Colors call out `The background color should be `#ffffff` for light mode and `#0d1117` for dark mode`
 
+- Specify syntax in code block \`\`\``ruby`
 
-
+- Definition list can only be created via HTML `<\dl><\dt><\dd>`
